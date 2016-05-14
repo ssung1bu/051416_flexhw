@@ -1,0 +1,28 @@
+#parent {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.child1, .child2, .child3 {
+  border: 1px solid black;
+  height: 100px;
+}
+
+.child1 {
+	width: 10%;
+}
+
+.child2 {
+  width: 15%;
+}
+
+.child3 {
+  width: 20%;
+}
+
+@media screen and (max-width: 450px) {
+	.child1, .child2, .child3 {
+		width: 80%;
+	}
+}
